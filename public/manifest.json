@@ -1,6 +1,6 @@
 {
-  "short_name": "capacitor-react-app",
-  "name": "Capacitor React App",
+  "short_name": "pwa-demo-app",
+  "name": "PWA Demo App",
   "icons": [
     {
       "src": "/images/logo.png",

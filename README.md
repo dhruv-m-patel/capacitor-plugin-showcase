@@ -1,12 +1,12 @@
-# capacitor-react-app
+# pwa-demo-app
 
-A boilerplate for building PWA mobile apps with Capacitor.js and React
+A PWA demo mobile app built with Capacitor.js and React
 
 ### Setup
 
 ```
-$ git clone git@github.com:dhruv-m-patel/capacitor-react-app.git
-$ cd capacitor-pwa-app
+$ git clone git@github.com:dhruv-m-patel/pwa-demo-app.git
+$ cd pwa-demo-app
 $ npm i
 $ npm run build
 $ npm start
