@@ -13,4 +13,3 @@ $ npm start
 ```
 
 To open ios app, run `npm run open:ios`. To open android app, run `npm run open:android`.
-
