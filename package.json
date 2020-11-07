@@ -20,7 +20,8 @@
     "open:android": "cap sync android && cap open android",
     "open:ios": "cap sync ios && cap open ios",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint -c .eslintrc ."
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-react": "^7.21.5"
   }
 }
