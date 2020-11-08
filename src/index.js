@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { defineCustomElements } from '@ionic/pwa-elements/loader'
 import ReduxStateDecorator from './redux/StateDecorator'
 
 import App from './components/App'
@@ -18,6 +19,9 @@ export default function renderApp() {
         </ReduxStateDecorator>,
         document.getElementById('root')
     )
+    if (typeof window !== 'undefined') {
+        defineCustomElements(window)
+    }
 }
 
 renderApp()

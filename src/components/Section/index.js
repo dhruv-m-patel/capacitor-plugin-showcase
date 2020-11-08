@@ -3,8 +3,21 @@ import PropTypes from 'prop-types'
 import { Box, Typography } from '@material-ui/core'
 
 const Section = ({ title, children }) => (
-    <Box p={1} mt={1} mb={1} border={1} borderRadius="borderRadius">
-        {!!title && <Typography variant="subtitle1">{title}</Typography>}
+    <Box
+        p={2}
+        mt={1}
+        mb={1}
+        border={1}
+        borderRadius="borderRadius"
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+    >
+        {!!title && (
+            <Typography variant="subtitle1" display="inline">
+                {title}
+            </Typography>
+        )}
         {children}
     </Box>
 )
