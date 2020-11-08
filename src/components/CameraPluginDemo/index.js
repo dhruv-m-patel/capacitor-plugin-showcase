@@ -19,11 +19,9 @@ export default function CameraPluginDemo() {
 
     return (
         <Section title="Camera Plugin">
-            {!capturedPhoto && (
-                <IconButton component="span" onClick={capturePhoto}>
-                    <PhotoCamera />
-                </IconButton>
-            )}
+            <IconButton component="span" onClick={capturePhoto}>
+                <PhotoCamera />
+            </IconButton>
             {!!capturedPhoto && <img src={capturedPhoto.webPath} alt="selected photo" />}
         </Section>
     )
