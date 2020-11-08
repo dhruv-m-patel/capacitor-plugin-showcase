@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
+import CameraPluginDemo from '../CameraPluginDemo'
 import './App.css'
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
         <Box className="root">
             <Typography variant="h4">Welcome to PWA Demo App</Typography>
             <Typography>A PWA demo mobile app built with Capacitor.js and React</Typography>
+            <CameraPluginDemo />
         </Box>
     )
 }
