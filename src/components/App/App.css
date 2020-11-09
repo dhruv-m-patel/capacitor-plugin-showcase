@@ -1,4 +1,14 @@
 .root {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
+    padding: 0.5rem;
+}
+
+@supports (padding: max(0px)) {
+    .root {
+        padding-top: max(2rem, env(safe-area-inset-top));
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+        padding-left: max(2rem, env(safe-area-inset-left));
+        padding-right: max(2rem, env(safe-area-inset-right));
+    }
 }
