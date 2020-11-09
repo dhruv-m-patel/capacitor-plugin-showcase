@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container, Box, Typography } from '@material-ui/core'
 import { Capacitor } from '@capacitor/core'
+import AccessibilityPlugin from '../capacitor-plugins/Accessibility'
 import AppPlugin from '../capacitor-plugins/App'
+import BackgroundTaskPlugin from '../capacitor-plugins/BackgroundTask'
 import CameraPlugin from '../capacitor-plugins/Camera'
 import BrowserPlugin from '../capacitor-plugins/Browser'
-import AccessibilityPlugin from '../capacitor-plugins/Accessibility'
 import Section from '../Section'
 import './App.css'
 
@@ -26,6 +27,7 @@ export default function App() {
                 )}
                 <AccessibilityPlugin />
                 <AppPlugin />
+                <BackgroundTaskPlugin />
                 <CameraPlugin />
                 <BrowserPlugin />
             </Box>
