@@ -12,7 +12,7 @@ export default function HapticsPlugin() {
                 style: HapticsImpactStyle.Heavy,
             })
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -22,7 +22,7 @@ export default function HapticsPlugin() {
                 style: HapticsImpactStyle.Medium,
             })
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -32,7 +32,7 @@ export default function HapticsPlugin() {
                 style: HapticsImpactStyle.Light,
             })
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -40,7 +40,7 @@ export default function HapticsPlugin() {
         if (Capacitor.isNative) {
             Haptics.vibrate()
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -48,7 +48,7 @@ export default function HapticsPlugin() {
         if (Capacitor.isNative) {
             Haptics.selectionStart()
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -56,7 +56,7 @@ export default function HapticsPlugin() {
         if (Capacitor.isNative) {
             Haptics.selectionChanged()
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
@@ -64,7 +64,7 @@ export default function HapticsPlugin() {
         if (Capacitor.isNative) {
             Haptics.selectionEnd()
         } else {
-            console.log('Please open native app')
+            console.log('Please use native app')
         }
     }, [])
 
