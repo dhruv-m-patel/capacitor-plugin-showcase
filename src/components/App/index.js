@@ -15,6 +15,7 @@ import ModalsPlugin from '../capacitor-plugins/Modals'
 import MotionPlugin from '../capacitor-plugins/Motion'
 import NetworkPlugin from '../capacitor-plugins/Network'
 import PermissionPlugin from '../capacitor-plugins/Permission'
+import SharePlugin from '../capacitor-plugins/Share'
 import Section from '../Section'
 import './App.css'
 
@@ -47,6 +48,7 @@ export default function App() {
             <MotionPlugin />
             <NetworkPlugin />
             <PermissionPlugin />
+            <SharePlugin />
         </Container>
     )
 }
