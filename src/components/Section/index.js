@@ -28,7 +28,15 @@ const Section = ({ header, title, children }) => (
                     {title}
                 </Link>
             ))}
-        <Box>{children}</Box>
+        <Box
+            display="flex"
+            justifyContent="space-around"
+            flexDirection="column"
+            flexWrap="wrap"
+            style={{ gap: '0.5rem' }}
+        >
+            {children}
+        </Box>
     </Box>
 )
 
