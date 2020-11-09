@@ -1,12 +1,12 @@
-# pwa-demo-app
+# capacitor-plugin-showcase
 
-A PWA demo mobile app built with Capacitor.js and React
+An unofficial showcase of functionality served by official Capacitor plugins
 
 ### Setup
 
 ```
-$ git clone git@github.com:dhruv-m-patel/pwa-demo-app.git
-$ cd pwa-demo-app
+$ git clone git@github.com:dhruv-m-patel/capacitor-plugin-showcase.git
+$ cd capacitor-plugin-showcase
 $ npm i
 $ npm run build
 $ npm start

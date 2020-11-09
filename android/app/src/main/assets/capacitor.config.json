@@ -1,6 +1,6 @@
 {
-    "appId": "com.pwademo.app",
-    "appName": "pwa-demo-app",
+    "appId": "com.capacitorpluginshowcase.app",
+    "appName": "capacitor-plugin-showcase",
     "bundledWebRuntime": false,
     "npmClient": "npm",
     "webDir": "build",
