@@ -1,6 +1,6 @@
 {
-  "short_name": "pwa-demo-app",
-  "name": "PWA Demo App",
+  "short_name": "capacitor-plugin-showcase",
+  "name": "Capacitor Plugin Showcase",
   "icons": [
     {
       "src": "/images/logo.png",

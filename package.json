@@ -1,5 +1,5 @@
 {
-    "name": "pwa-demo-app",
+    "name": "capacitor-plugin-showcase",
     "version": "0.1.0",
     "private": true,
     "engines": {
