@@ -11,6 +11,7 @@ import DevicePlugin from '../capacitor-plugins/Device'
 import GeolocationPlugin from '../capacitor-plugins/Geolocation'
 import HapticsPlugin from '../capacitor-plugins/Haptics'
 import KeyboardPlugin from '../capacitor-plugins/Keyboard'
+import ModalsPlugin from '../capacitor-plugins/Modals'
 import Section from '../Section'
 import './App.css'
 
@@ -39,6 +40,7 @@ export default function App() {
             <GeolocationPlugin />
             <HapticsPlugin />
             <KeyboardPlugin />
+            <ModalsPlugin />
         </Container>
     )
 }
