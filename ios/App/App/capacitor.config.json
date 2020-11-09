@@ -1,13 +1,13 @@
 {
-  "appId": "com.pwademo.app",
-  "appName": "pwa-demo-app",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "build",
-  "plugins": {
-    "SplashScreen": {
-      "launchShowDuration": 0
-    }
-  },
-  "cordova": {}
+    "appId": "com.pwademo.app",
+    "appName": "pwa-demo-app",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 0
+        }
+    },
+    "cordova": {}
 }
