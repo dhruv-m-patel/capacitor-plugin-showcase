@@ -4,6 +4,7 @@
     padding: 0.5rem;
 }
 
+/* Adjust styling for devices with a notch: https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
 @supports (padding: max(0px)) {
     .root {
         padding-top: max(2rem, env(safe-area-inset-top));
