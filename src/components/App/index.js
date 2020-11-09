@@ -28,8 +28,8 @@ export default function App() {
                 <AccessibilityPlugin />
                 <AppPlugin />
                 <BackgroundTaskPlugin />
-                <CameraPlugin />
                 <BrowserPlugin />
+                <CameraPlugin />
             </Box>
         </Container>
     )
