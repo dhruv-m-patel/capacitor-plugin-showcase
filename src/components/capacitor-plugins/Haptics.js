@@ -69,7 +69,7 @@ export default function HapticsPlugin() {
     }, [])
 
     return (
-        <Section title="Haptics">
+        <Section title="Haptics" web={false}>
             <Button variant="contained" onClick={setHeavyHaptics}>
                 Set Heavy Haptics
             </Button>

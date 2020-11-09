@@ -80,7 +80,7 @@ export default function KeyboardPlugin() {
     }, [])
 
     return (
-        <Section title="Keyboard">
+        <Section title="Keyboard" web={false}>
             <Button variant="contained" onClick={showAccessoryBar}>
                 Show Accessory Bar
             </Button>

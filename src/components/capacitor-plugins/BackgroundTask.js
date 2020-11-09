@@ -27,7 +27,7 @@ export default function BackgroundTaskPlugin() {
     }, [])
 
     return (
-        <Section title="Background Task">
+        <Section title="Background Task" web={false}>
             <Button variant="contained" onClick={configureBackgroundTask}>
                 Configure
             </Button>
