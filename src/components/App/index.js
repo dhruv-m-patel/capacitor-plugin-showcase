@@ -14,6 +14,7 @@ import KeyboardPlugin from '../capacitor-plugins/Keyboard'
 import ModalsPlugin from '../capacitor-plugins/Modals'
 import MotionPlugin from '../capacitor-plugins/Motion'
 import NetworkPlugin from '../capacitor-plugins/Network'
+import PermissionPlugin from '../capacitor-plugins/Permission'
 import Section from '../Section'
 import './App.css'
 
@@ -45,6 +46,7 @@ export default function App() {
             <ModalsPlugin />
             <MotionPlugin />
             <NetworkPlugin />
+            <PermissionPlugin />
         </Container>
     )
 }
