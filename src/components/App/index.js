@@ -18,6 +18,7 @@ import PermissionPlugin from '../capacitor-plugins/Permission'
 import SharePlugin from '../capacitor-plugins/Share'
 import SplashScreenPlugin from '../capacitor-plugins/SplashScreen'
 import StatusBarPlugin from '../capacitor-plugins/StatusBar'
+import StoragePlugin from '../capacitor-plugins/Storage'
 import Section from '../Section'
 import './App.css'
 
@@ -53,6 +54,7 @@ export default function App() {
             <SharePlugin />
             <SplashScreenPlugin />
             <StatusBarPlugin />
+            <StoragePlugin />
         </Container>
     )
 }
