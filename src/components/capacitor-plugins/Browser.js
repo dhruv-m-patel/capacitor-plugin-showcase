@@ -3,7 +3,7 @@ import { Plugins } from '@capacitor/core'
 import { Button } from '@material-ui/core'
 import Section from '../Section'
 
-export default function BrowserPluginDemo() {
+export default function Browser() {
     const openBrowser = useCallback(async () => {
         const { Browser } = Plugins
         await Browser.open({ url: 'https://capacitorjs.com/docs/apis' })

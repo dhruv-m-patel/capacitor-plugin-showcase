@@ -10,14 +10,16 @@ function getOfficialPluginLink(pluginName) {
 
 const Section = ({ header, title, children }) => (
     <Box
-        p={Capacitor.isNative ? 1 : 2}
         mt={1}
         mb={1}
         border={1}
         borderRadius="borderRadius"
+        p={Capacitor.isNative ? 1 : 2}
         display="flex"
-        justifyContent="space-between"
+        justifyContent={Capacitor.isNative ? 'space-around' : 'space-between'}
+        flexDirection={Capacitor.isNative ? 'column' : 'row'}
         alignItems="center"
+        flexWrap="wrap"
         style={{ fontWeight: header ? 'bold' : 'normal' }}
     >
         {!!title &&

@@ -1,10 +1,12 @@
 import React from 'react'
 import { Container, Box, Typography } from '@material-ui/core'
+import { Capacitor } from '@capacitor/core'
+import AppPlugin from '../capacitor-plugins/App'
 import CameraPlugin from '../capacitor-plugins/Camera'
 import BrowserPlugin from '../capacitor-plugins/Browser'
 import AccessibilityPlugin from '../capacitor-plugins/Accessibility'
-import './App.css'
 import Section from '../Section'
+import './App.css'
 
 export default function App() {
     return (
@@ -17,10 +19,13 @@ export default function App() {
                     The purpose of the app is to demonstrate functionality offered by the official Capacitor Plugins
                 </Typography>
                 <br />
-                <Section header title="Plugin">
-                    Available Actions
-                </Section>
+                {!Capacitor.isNative && (
+                    <Section header title="Plugin">
+                        Available Actions
+                    </Section>
+                )}
                 <AccessibilityPlugin />
+                <AppPlugin />
                 <CameraPlugin />
                 <BrowserPlugin />
             </Box>
