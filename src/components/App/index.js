@@ -13,6 +13,7 @@ import HapticsPlugin from '../capacitor-plugins/Haptics'
 import KeyboardPlugin from '../capacitor-plugins/Keyboard'
 import ModalsPlugin from '../capacitor-plugins/Modals'
 import MotionPlugin from '../capacitor-plugins/Motion'
+import NetworkPlugin from '../capacitor-plugins/Network'
 import Section from '../Section'
 import './App.css'
 
@@ -43,6 +44,7 @@ export default function App() {
             <KeyboardPlugin />
             <ModalsPlugin />
             <MotionPlugin />
+            <NetworkPlugin />
         </Container>
     )
 }
