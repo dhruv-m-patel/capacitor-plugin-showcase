@@ -16,6 +16,7 @@ import MotionPlugin from '../capacitor-plugins/Motion'
 import NetworkPlugin from '../capacitor-plugins/Network'
 import PermissionPlugin from '../capacitor-plugins/Permission'
 import SharePlugin from '../capacitor-plugins/Share'
+import SplashScreenPlugin from '../capacitor-plugins/SplashScreen'
 import Section from '../Section'
 import './App.css'
 
@@ -49,6 +50,7 @@ export default function App() {
             <NetworkPlugin />
             <PermissionPlugin />
             <SharePlugin />
+            <SplashScreenPlugin />
         </Container>
     )
 }
