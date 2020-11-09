@@ -8,7 +8,7 @@ export default function SplashScreenPlugin() {
 
     const showSplashScreen = useCallback(async () => {
         if (Capacitor.isNative) {
-            await SplashScreen.show({ autoHide: false })
+            await SplashScreen.show({ autoHide: true })
         } else {
             console.log('Please use native app')
         }
@@ -16,7 +16,7 @@ export default function SplashScreenPlugin() {
 
     const showSplashScreenWithDelay = useCallback(async () => {
         if (Capacitor.isNative) {
-            await SplashScreen.show({ autoHide: false, showDuration: 2000 })
+            await SplashScreen.show({ autoHide: true, showDuration: 2000 })
         } else {
             console.log('Please use native app')
         }
