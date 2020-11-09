@@ -12,6 +12,7 @@ import GeolocationPlugin from '../capacitor-plugins/Geolocation'
 import HapticsPlugin from '../capacitor-plugins/Haptics'
 import KeyboardPlugin from '../capacitor-plugins/Keyboard'
 import ModalsPlugin from '../capacitor-plugins/Modals'
+import MotionPlugin from '../capacitor-plugins/Motion'
 import Section from '../Section'
 import './App.css'
 
@@ -41,6 +42,7 @@ export default function App() {
             <HapticsPlugin />
             <KeyboardPlugin />
             <ModalsPlugin />
+            <MotionPlugin />
         </Container>
     )
 }

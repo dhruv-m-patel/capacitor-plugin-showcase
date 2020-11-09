@@ -8,13 +8,13 @@ import AndroidIcon from '@material-ui/icons/Android'
 export default function PlatformSupport({ web, ios, android }) {
     return (
         <Box>
-            <SvgIcon color={web ? 'primary' : 'grey'}>
+            <SvgIcon color={web ? 'primary' : 'disabled'}>
                 <LanguageIcon />
             </SvgIcon>
-            <SvgIcon color={ios ? 'primary' : 'grey'}>
+            <SvgIcon color={ios ? 'primary' : 'disabled'}>
                 <AppleIcon />
             </SvgIcon>
-            <SvgIcon color={android ? 'primary' : 'grey'}>
+            <SvgIcon color={android ? 'primary' : 'disabled'}>
                 <AndroidIcon />
             </SvgIcon>
         </Box>
