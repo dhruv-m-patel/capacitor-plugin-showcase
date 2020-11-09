@@ -9,15 +9,15 @@ export default function App() {
     const setUpListeners = useCallback(async () => {
         App.addListener('appStateChange', (state) => {
             // state.isActive contains the active state
-            alert('App state changed. Is active?', state.isActive)
+            console.log('App state changed. Is active?', state.isActive)
         })
 
         App.addListener('appUrlOpen', (data) => {
-            alert('App opened with URL: ' + data.url)
+            console.log('App opened with URL: ' + data.url)
         })
 
         App.addListener('appRestoredResult', (data) => {
-            alert('Restored state:', data)
+            console.log('Restored state:', data)
         })
     }, [])
 
@@ -27,19 +27,19 @@ export default function App() {
 
     const checkUrl = useCallback(async (url) => {
         const result = await App.canOpenUrl({ url })
-        alert(`Can open url (${url}): ${result.value}`)
+        console.log(`Can open url (${url}): ${result.value}`)
     }, [])
 
     const openUrl = useCallback(async (url) => {
         const result = await App.openUrl({ url })
-        alert(`Open url (${url}) response: ${result}`)
+        console.log(`Open url (${url}) response: ${result}`)
         console.log('result: ', result)
     }, [])
 
     const getLaunchUrl = useCallback(async () => {
         const result = await App.getLaunchUrl()
         if (typeof result?.url !== 'undefined') {
-            alert(`App opened with URL: ${result.url === '' ? '""' : result.url}`)
+            console.log(`App opened with URL: ${result.url === '' ? '""' : result.url}`)
         }
     }, [])
 

@@ -9,9 +9,9 @@ export default function Accessibility() {
     const isVoiceOverEnabled = useCallback(async () => {
         if (Capacitor.isNative) {
             const result = await Accessibility.isScreenReaderEnabled()
-            alert(`Voice over ${result.value ? 'is' : 'is not'} enabled`)
+            console.log(`Voice over ${result.value ? 'is' : 'is not'} enabled`)
         } else {
-            alert('Please try native app')
+            console.log('Please try native app')
         }
     }, [])
 
