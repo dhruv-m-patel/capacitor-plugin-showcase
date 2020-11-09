@@ -37,7 +37,7 @@ export default function AccessibilityPlugin() {
     }, [])
 
     return (
-        <Section title="Accessibility">
+        <Section title="Accessibility" web={false}>
             <Button variant="contained" onClick={isVoiceOverEnabled}>
                 Check Voiceover
             </Button>
