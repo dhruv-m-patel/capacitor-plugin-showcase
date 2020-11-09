@@ -3,7 +3,7 @@ import { Plugins } from '@capacitor/core'
 import { Button } from '@material-ui/core'
 import Section from '../Section'
 
-export default function App() {
+export default function AppPlugin() {
     const { App } = Plugins
 
     const setUpListeners = useCallback(async () => {
@@ -45,10 +45,10 @@ export default function App() {
 
     return (
         <Section title="App">
-            <Button variant="contained" onClick={() => setUpListeners}>
+            <Button variant="contained" onClick={setUpListeners}>
                 Setup Listeners
             </Button>
-            <Button variant="contained" onClick={() => removeListeners}>
+            <Button variant="contained" onClick={removeListeners}>
                 Remove Listeners
             </Button>
             <Button variant="contained" onClick={() => checkUrl('com.pwademo.app')}>

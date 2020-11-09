@@ -3,7 +3,7 @@ import { Capacitor, Plugins } from '@capacitor/core'
 import Section from '../Section'
 import { Button } from '@material-ui/core'
 
-export default function Accessibility() {
+export default function AccessibilityPlugin() {
     const { Accessibility, Modals } = Plugins
 
     const isVoiceOverEnabled = useCallback(async () => {

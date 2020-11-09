@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core'
 import { PhotoCamera } from '@material-ui/icons'
 import Section from '../Section'
 
-export default function Camera() {
+export default function CameraPlugin() {
     const [capturedPhoto, setCapturedPhoto] = useState()
     const { Camera } = Plugins
 
