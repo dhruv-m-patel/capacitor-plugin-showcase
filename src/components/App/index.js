@@ -19,6 +19,7 @@ import SharePlugin from '../capacitor-plugins/Share'
 import SplashScreenPlugin from '../capacitor-plugins/SplashScreen'
 import StatusBarPlugin from '../capacitor-plugins/StatusBar'
 import StoragePlugin from '../capacitor-plugins/Storage'
+import ToastPlugin from '../capacitor-plugins/Toast'
 import Section from '../Section'
 import './App.css'
 
@@ -55,6 +56,7 @@ export default function App() {
             <SplashScreenPlugin />
             <StatusBarPlugin />
             <StoragePlugin />
+            <ToastPlugin />
         </Container>
     )
 }
