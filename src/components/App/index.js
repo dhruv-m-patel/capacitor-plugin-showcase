@@ -7,6 +7,7 @@ import BackgroundTaskPlugin from '../capacitor-plugins/BackgroundTask'
 import BrowserPlugin from '../capacitor-plugins/Browser'
 import CameraPlugin from '../capacitor-plugins/Camera'
 import ClipboardPlugin from '../capacitor-plugins/Clipboard'
+import DevicePlugin from '../capacitor-plugins/Device'
 import Section from '../Section'
 import './App.css'
 
@@ -31,6 +32,7 @@ export default function App() {
             <BrowserPlugin />
             <CameraPlugin />
             <ClipboardPlugin />
+            <DevicePlugin />
         </Container>
     )
 }
