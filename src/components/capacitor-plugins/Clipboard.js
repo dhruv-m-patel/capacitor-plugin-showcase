@@ -15,7 +15,7 @@ export default function ClipboardPlugin() {
     }, [])
 
     return (
-        <Section title="Browser">
+        <Section title="Clipboard">
             <Button variant="contained" onClick={() => writeToClipboard('Capacitor.js PWA app')}>
                 Write
             </Button>
