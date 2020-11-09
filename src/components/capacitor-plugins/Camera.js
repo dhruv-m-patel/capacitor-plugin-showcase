@@ -21,7 +21,7 @@ export default function CameraPluginDemo() {
 
     return (
         <>
-            <Section title="Camera Plugin">
+            <Section title="Camera">
                 <IconButton component="span" onClick={capturePhoto}>
                     <PhotoCamera />
                 </IconButton>

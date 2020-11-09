@@ -1,10 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Box, Typography } from '@material-ui/core'
+import { Box, Link } from '@material-ui/core'
+import { Capacitor } from '@capacitor/core'
 
-const Section = ({ title, children }) => (
+function getOfficialPluginLink(pluginName) {
+    const officialPlugin = pluginName.toLowerCase().replace(/([^a-z0-9])/g, '-')
+    return `https://capacitorjs.com/docs/apis/${officialPlugin}`
+}
+
+const Section = ({ header, title, children }) => (
     <Box
-        p={2}
+        p={Capacitor.isNative ? 1 : 2}
         mt={1}
         mb={1}
         border={1}
@@ -12,23 +18,29 @@ const Section = ({ title, children }) => (
         display="flex"
         justifyContent="space-between"
         alignItems="center"
+        style={{ fontWeight: header ? 'bold' : 'normal' }}
     >
-        {!!title && (
-            <Typography variant="subtitle1" display="inline">
-                {title}
-            </Typography>
-        )}
-        {children}
+        {!!title &&
+            (header ? (
+                <span>{title}</span>
+            ) : (
+                <Link href={getOfficialPluginLink(title)} target="_blank" variant="subtitle1" display="inline">
+                    {title}
+                </Link>
+            ))}
+        <Box>{children}</Box>
     </Box>
 )
 
 Section.propTypes = {
     title: PropTypes.string,
     children: PropTypes.node.isRequired,
+    header: PropTypes.bool,
 }
 
 Section.defaultProps = {
     title: undefined,
+    header: false,
 }
 
 export default Section

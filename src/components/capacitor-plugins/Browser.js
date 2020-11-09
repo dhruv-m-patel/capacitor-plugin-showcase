@@ -10,7 +10,7 @@ export default function BrowserPluginDemo() {
     }, [])
 
     return (
-        <Section title="Browser Plugin">
+        <Section title="Browser">
             <Button variant="contained" onClick={openBrowser}>
                 Open Browser
             </Button>
