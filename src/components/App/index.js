@@ -4,8 +4,9 @@ import { Capacitor } from '@capacitor/core'
 import AccessibilityPlugin from '../capacitor-plugins/Accessibility'
 import AppPlugin from '../capacitor-plugins/App'
 import BackgroundTaskPlugin from '../capacitor-plugins/BackgroundTask'
-import CameraPlugin from '../capacitor-plugins/Camera'
 import BrowserPlugin from '../capacitor-plugins/Browser'
+import CameraPlugin from '../capacitor-plugins/Camera'
+import ClipboardPlugin from '../capacitor-plugins/Clipboard'
 import Section from '../Section'
 import './App.css'
 
@@ -30,6 +31,7 @@ export default function App() {
                 <BackgroundTaskPlugin />
                 <BrowserPlugin />
                 <CameraPlugin />
+                <ClipboardPlugin />
             </Box>
         </Container>
     )
